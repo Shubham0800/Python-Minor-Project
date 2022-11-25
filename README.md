@@ -19,7 +19,7 @@ It is an Exploratory Data Analysis on Summer Olympics Games from 1896 to 2012. I
 5. Top Countries Participation
 6. Gender Participation
 
-#### Assignment Questions: (Answered)
+#### Questions: (Answered)
 
 1.  In how many cities Summer Olympics is held so far?
 2.  Which sport is having most number of Gold Medals so far? (Top 5)
