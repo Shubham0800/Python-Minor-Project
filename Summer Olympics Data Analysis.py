@@ -48,25 +48,16 @@ for Sport in df['Sport'].unique():
     pd.DataFrame(lst,columns = ['Sport','Medal']).sort_values(by='Medal', ascending=False).head().plot(x = 'Sport', y = 'Medal', kind = 'bar', figsize = (5,5))
     pd.DataFrame(lst,columns = ['Sport','Medal']).sort_values(by='Medal', ascending=False)
     pd.DataFrame(lst,columns = ['Sport','Medal']).sort_values(by='Medal', ascending=False).plot(x = 'Sport', y = 'Medal', kind = 'bar', figsize = (10,7))
-    
+
 data=df.values
 data
-lst=[]
-for Athlete in df['Athlete']:
+for Year in df['Year'].unique():
     count=0
     for i in range(len(data)):
-        if(data[i][4]==Athlete):
-                count+=1
-    lst.append([Athlete,count])
-    len(df['Athlete'].unique())
-    lst=[]
-for Athlete in df['Athlete'].unique():
-    count=0
-    for i in range(len(data)):
-        if(data[i][4]==Athlete):
-                count+=1
-        
-    lst.append([Athlete,count])
+        if(data[i][0]==Year):
+            if(data[i][5]=='IND')&(data[i][8]=='Gold'):
+                print(data[i][0])
+                break
 
 data=df.values
 data
