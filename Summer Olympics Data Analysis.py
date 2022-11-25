@@ -75,7 +75,7 @@ for Athlete in df['Athlete']:
     count=0
     for i in range(len(data)):
         if(data[i][8]=='Gold'):
-            if(data[i][4] == Athlete)
+            if(data[i][4] == Athlete):
                 count+=1
     lst.append([Athlete,count])
     df['Athlete'].unique()
