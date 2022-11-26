@@ -24,7 +24,7 @@ It is an Exploratory Data Analysis on Summer Olympics Games from 1896 to 2012. I
 1.  In how many cities Summer Olympics is held so far?
 2.  Which sport is having most number of Gold Medals so far? (Top 5)
 3.  Which sport is having most number of medals so far? (Top 5)
-4.  Which player has won most number of medals? (Top 5)
+4.  In which year India won first Gold Medal in Summer Olympics?
 5.  Which player has won most number Gold Medals of medals? (Top 5)
 
 #### CSV File:
