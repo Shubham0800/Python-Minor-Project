@@ -58,3 +58,19 @@ for Year in df['Year'].unique():
             if(data[i][5]=='IND')&(data[i][8]=='Gold'):
                 print(data[i][0])
                 break
+
+data=df.values
+data
+lst=[]
+
+for Event in df['Event'].unique():
+    count=0
+    for i in range(len(data)):
+        if(data[i][7]==Event):
+            count+=1
+    lst.append([Event,count])
+lst
+pd.DataFrame(lst,columns = ['Event','freq']).sort_values(by='freq', ascending=False).head()
+pd.DataFrame(lst,columns = ['Event','freq']).sort_values(by='freq', ascending=False).head().plot(x = 'Event', y = 'freq', kind = 'bar', figsize = (5,5))
+pd.DataFrame(lst,columns = ['Event','freq']).sort_values(by='freq', ascending=False)
+pd.DataFrame(lst,columns = ['Event','freq']).sort_values(by='freq', ascending=False).plot(x = 'Event', y = 'freq', kind = 'bar', figsize = (15,10))
