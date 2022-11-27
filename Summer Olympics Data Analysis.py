@@ -58,16 +58,3 @@ for Year in df['Year'].unique():
             if(data[i][5]=='IND')&(data[i][8]=='Gold'):
                 print(data[i][0])
                 break
-
-data=df.values
-data
-lst=[]
-for Athlete in df['Athlete']:
-    count=0
-    for i in range(len(data)):
-        if(data[i][8]=='Gold'):
-            if(data[i][4] == Athlete):
-                count+=1
-    lst.append([Athlete,count])
-    df['Athlete'].unique()
-    lst
